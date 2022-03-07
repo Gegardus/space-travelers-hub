@@ -1,41 +1,29 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+import Logo from '../images/001-planet.png';
 
-const Header = () => {
-  const links = [
-    {
-      text: 'rockets',
-      path: '/',
-      id: 0,
-    },
-    {
-      text: 'missions',
-      path: '/missions',
-      id: 1,
-    },
-    {
-      text: 'myprofile',
-      path: '/myprofile',
-      id: 2,
-    },
-  ];
-  return (
-    <header>
-      <img alt="logo-top" src={logo} className="logo" />
-      <nav>
-        <ul>
-          {
-          links.map((link) => (
-            <li key={link.id}>
-              <NavLink to={link.path}>{link.text}</NavLink>
-            </li>
-          ))
-        }
-        </ul>
-      </nav>
-    </header>
-  );
-};
+const Header = () => (
+  <header className="header">
+    <div className="flex">
+      <img className="logo-img" src={Logo} alt="logo" />
+      <h1 className="logo-text">Space Traveler&apos;s Hub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <NavLink to="/" className="link">Rockets</NavLink>
+        </li>
+        <li>
+          <NavLink to="/missions" className="link">Missions</NavLink>
+        </li>
+        <li>
+          <NavLink to="/dragons" className="link">Dragons</NavLink>
+        </li>
+        <li>
+          <NavLink to="/myProfile" className="link profile">My Profile</NavLink>
+        </li>
+      </ul>
+    </nav>
+  </header>
+);
 
 export default Header;

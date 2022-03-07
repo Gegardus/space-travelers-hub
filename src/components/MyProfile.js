@@ -1,14 +1,3 @@
-import React from 'react';
-
-const MyProfile = () => (
-  <main className="profile">
-    <div className="profile-rockets">
-      <h1>My Rockets</h1>
-    </div>
-    <div className="profile-missions">
-      <h1>My Missions</h1>
-    </div>
-  </main>
-);
+const MyProfile = () => (<h1>My Profile</h1>);
 
 export default MyProfile;

@@ -1,36 +1,20 @@
-import './styles/MyProfile.css';
-import './styles/Rockets.css';
-import './styles/Missions.css';
-import './styles/Header.css';
-import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import Rockets from './components/rockets/Rockets';
+import Missions from './components/missions/Missions';
+import Dragons from './components/dragons/Dragons';
 import MyProfile from './components/MyProfile';
-import Rockets from './components/Rockets';
-import Missions from './components/Missions';
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route
-          path="/"
-          element={(
-            <Rockets />
-        )}
-        />
-        <Route
-          path="/missions"
-          element={(
-            <Missions />
-        )}
-        />
-        <Route
-          path="/myprofile"
-          element={(
-            <MyProfile />
-        )}
-        />
+        <Route exact path="/" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/dragons" element={<Dragons />} />
+        <Route path="/myProfile" element={<MyProfile />} />
       </Routes>
     </>
   );
