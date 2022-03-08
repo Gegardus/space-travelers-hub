@@ -10,8 +10,9 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 25px;
+  padding: 5px;
   justify-content: space-between;
+  background-color: #f4f7f8;
 }
 
 .flex {
@@ -52,16 +53,19 @@ nav li {
   padding-left: 10px;
 }
 
-.rocket {
+.rocket,
+.dragon {
   display: flex;
 }
 
-.rocket-img img {
-  height: 270px;
+.rocket-img img,
+.dragon-img img {
+  height: 250px;
   width: 290px;
-  padding: 20px 0 0 40px;
+  padding: 20px 0 10px 40px;
 }
 
-.rocket-description {
+.rocket-description,
+.dragon-description {
   padding: 20px;
 }
