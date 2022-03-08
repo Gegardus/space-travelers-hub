@@ -10,8 +10,14 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 25px;
+  padding: 5px;
   justify-content: space-between;
+  background-color: #f4f7f8;
+}
+
+.logo-text {
+  margin: 0;
+  font-size: 24px;
 }
 
 .flex {
@@ -42,9 +48,9 @@ nav li {
 }
 
 .logo-img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 10px 20px;
 }
 
 .profile {
@@ -52,16 +58,19 @@ nav li {
   padding-left: 10px;
 }
 
-.rocket {
+.rocket,
+.dragon {
   display: flex;
 }
 
-.rocket-img img {
-  height: 270px;
+.rocket-img img,
+.dragon-img img {
+  height: 240px;
   width: 290px;
-  padding: 20px 0 0 40px;
+  padding: 20px 0 10px 40px;
 }
 
-.rocket-description {
+.rocket-description,
+.dragon-description {
   padding: 20px;
 }
