@@ -48,6 +48,20 @@ nav li {
 }
 
 .profile {
-  border-left: 2px solid #4e98ec;
+  border-left: 2px solid #4393ee;
   padding-left: 10px;
+}
+
+.rocket {
+  display: flex;
+}
+
+.rocket-img img {
+  height: 270px;
+  width: 290px;
+  padding: 20px 0 0 40px;
+}
+
+.rocket-description {
+  padding: 20px;
 }
