@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge';
 import {
   getRocketsFromAPI,
   reserveRocket,
@@ -30,6 +31,11 @@ rocketsData.map((rocket) => (
     <div className="rocket-description">
       <h2>{rocket.rocket_name}</h2>
       <p>
+        {rocket.reserved && (
+          <Badge bg="info" className="reserved-badge">
+            Reserved
+          </Badge>
+        )}
         {rocket.rocket_description}
       </p>
       {rocket.reserved ? (
