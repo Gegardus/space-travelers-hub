@@ -74,3 +74,22 @@ nav li {
 .dragon-description {
   padding: 20px;
 }
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.profile-container {
+  margin: 25px;
+  width: 30vw;
+}
+
+.profile-container div {
+  border-radius: 2px;
+}
+
+.profile-container p {
+  margin: 25px;
+}
