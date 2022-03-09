@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
-import { getRocketsFromAPI } from '../../redux/rockets/rockets';
+import {
+  getRocketsFromAPI,
+  reserveRocket,
+  cancelRocketReservation,
+} from '../../redux/rockets/rockets';
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -28,7 +32,21 @@ rocketsData.map((rocket) => (
       <p>
         {rocket.rocket_description}
       </p>
-      <Button variant="primary">Reserve Rocket</Button>
+      {rocket.reserved ? (
+        <Button
+          variant="outline-secondary"
+          onClick={() => dispatch(cancelRocketReservation(rocket.rocket_id))}
+        >
+          Cancel Reservation
+        </Button>
+      ) : (
+        <Button
+          variant="primary"
+          onClick={() => dispatch(reserveRocket(rocket.rocket_id))}
+        >
+          Reserve Rocket
+        </Button>
+      )}
     </div>
   </div>
 ))
