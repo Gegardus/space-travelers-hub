@@ -8,7 +8,7 @@ This project is a web application for a company that provides commercial and sci
 
 ## Live Demo
 
-[Live Demo Link]()
+[Not implemented yet]()
 
 ## Built With
 
