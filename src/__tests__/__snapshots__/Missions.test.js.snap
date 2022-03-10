@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission Component test Renders Missions Page 1`] = `
+<div
+  className="mission-container"
+>
+  <div
+    className="main-title"
+  >
+    <ul>
+      <li
+        className="name title"
+      >
+        Mission
+      </li>
+      <li
+        className="title"
+      >
+        Description
+      </li>
+      <li
+        className="status title"
+      >
+        Status
+      </li>
+      <li>
+         
+      </li>
+    </ul>
+  </div>
+  <div
+    className="mission-title"
+  />
+</div>
+`;
