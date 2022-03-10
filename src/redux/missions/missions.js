@@ -1,6 +1,6 @@
 const ADD_MISSION = 'spacetravelers-hub/redux/missions/ADD_MISSION';
-const RESERVE_MISSION = 'spacetravelers-hub/redux/dragons/RESERVE_MISSION';
-const CANCEL_RESERVATION = 'spacetravelers-hub/redux/dragons/CANCEL_RESERVATION';
+const RESERVE_MISSION = 'spacetravelers-hub/redux/missions/RESERVE_MISSION';
+const CANCEL_RESERVATION = 'spacetravelers-hub/redux/missions/CANCEL_RESERVATION';
 const missionApiURL = 'https://api.spacexdata.com/v3/missions';
 
 const initialState = [];
