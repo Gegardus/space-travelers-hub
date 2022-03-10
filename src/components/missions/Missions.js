@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissionFromAPI } from '../../redux/missions/missions';
+import Button from 'react-bootstrap/Button';
+import {
+  getMissionFromAPI,
+  reserveMission,
+  cancelMissionReservation,
+} from '../../redux/missions/missions';
 import './Mission.css';
 
 const Missions = () => {
@@ -27,16 +32,28 @@ const Missions = () => {
       </div>
       <div className="mission-title">
         {missionsData.map((mission) => (
-          <ul key={mission.id}>
-            <li className="name title">{mission.name}</li>
+          <ul key={mission.mission_id}>
+            <li className="name title">{mission.mission_name}</li>
             <li className="description">{mission.description}</li>
             <li className="status">
-              <div className="not-active">Not A Member</div>
+              {mission.reserved ? <div className="active-member">Active Member</div> : <div className="not-active">Not A Member</div>}
             </li>
             <li className="loading">
-              <button type="button" className="btn btn-outline-success">
-                Leave Mission
-              </button>
+              {mission.reserved ? (
+                <Button
+                  variant="outline-danger"
+                  onClick={() => dispatch(cancelMissionReservation(mission.mission_id))}
+                >
+                  Leave Mission
+                </Button>
+              ) : (
+                <Button
+                  variant="outline-secondary"
+                  onClick={() => dispatch(reserveMission(mission.mission_id))}
+                >
+                  Join Mission
+                </Button>
+              )}
             </li>
           </ul>
         ))}
