@@ -54,7 +54,15 @@
 .not-active {
   background-color: #6d757d;
   color: #fff;
-  padding: 1px 5px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.active-member {
+  background-color: #17a2b9;
+  color: #fff;
+  padding: 2px 5px;
   border-radius: 5px;
   font-weight: bold;
 }
