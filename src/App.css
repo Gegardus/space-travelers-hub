@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+  background-color: #f4f7f8;
+}
+
+.logo-text {
+  margin: 0;
+  font-size: 24px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+nav li {
+  list-style: none;
+  padding: 0 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link {
+  text-decoration: none;
+  color: #4e98ec;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 20px;
+}
+
+.profile {
+  border-left: 2px solid #4393ee;
+  padding-left: 10px;
+}
+
+.rocket,
+.dragon {
+  display: flex;
+}
+
+.rocket-img img,
+.dragon-img img {
+  height: 240px;
+  width: 290px;
+  padding: 20px 0 10px 40px;
+}
+
+.rocket-description,
+.dragon-description {
+  padding: 20px;
+}
+
+.profile-wrapper {
+  display: flex;
+}
+
+.profile-container {
+  list-style-type: none;
+  margin: 25px;
+  width: 30vw;
+}
+
+.profile-container li {
+  border: 1px solid gray;
+  padding: 5px 10px;
 }
