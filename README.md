@@ -42,7 +42,7 @@ To get a local copy and run into your machine, please follow the following simpl
 
 ## Recognition
 
-For all of you who helped me finishing this project.
+For all of you who helped us finishing this project.
 ## Show your support
 
 Give a ⭐ if you like this project!
